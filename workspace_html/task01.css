@@ -1,0 +1,60 @@
+*{
+  margin : 0;
+  padding : 0;  
+}
+
+header{
+  height: 200px;
+  background-color: gray;
+}
+
+header div{
+  display: flex;
+  justify-content: center;
+  margin-bottom : 50px;
+}
+
+header h1{
+  color: white;
+}
+
+nav ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav a {
+ text-decoration:none;
+ color: white;
+}
+
+nav li {
+  margin: 20px;
+  padding : 20px;
+  border-bottom: 1px solid white;
+}
+
+main{
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  height: 1000px;
+}
+
+article{
+  width: 500px;
+  height: 200px;
+  background-color: white;
+  display: flex;
+  margin : 20px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#task-container{
+  display: none;
+}
