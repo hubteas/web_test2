@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox에 prompt 값 넣기</title>
+</head>
+<body>
+
+<label id="checkboxLabel">
+    <input type="checkbox" id="myCheckbox"> 기본 텍스트
+</label>
+<br>
+<button onclick="changeCheckboxText()">텍스트 변경</button>
+
+<script>
+    function changeCheckboxText() {
+        // prompt 창으로부터 사용자 입력 받기
+        const userInput = prompt("체크박스에 넣을 텍스트를 입력하세요:");
+
+        // 입력된 텍스트를 checkbox의 label 요소에 적용
+        if (userInput) {
+            document.getElementById("checkboxLabel").innerText = userInput;
+        }
+    }
+</script>
+
+</body>
+</html>
